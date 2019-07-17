@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "glossary.bundle": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/glossary/GlossaryWebPart.js",
+          "manifest": "./src/webparts/glossary/GlossaryWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "quill": "src/js/quill/quill.js"
+  },
+  "localizedResources": {
+    "glossaryStrings": "lib/webparts/glossary/loc/{locale}.js"
+  }
+}

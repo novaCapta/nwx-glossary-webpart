@@ -1,0 +1,18 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution": {
+      "name": "nwx-glossary",
+      "id": "0b9ebd10-6923-45c2-8f90-8f0962122610",
+      "version": "2.0.0.0",
+      "features": [{
+        "title": "novaWorxx Glossary",
+        "description": "Glossary allows you to quickly build your organization terminology.",
+        "id": "df86de27-f179-4410-8020-e6201ef8b876",
+        "version": "2.0.0.0"
+    }],
+      "includeClientSideAssets": true
+    },
+    "paths": {
+      "zippedPackage": "solution/nwx-glossary.sppkg"
+    }
+  }

@@ -1,0 +1,4 @@
+{
+"$schema": "https://developer.microsoft.com/json-schemas/spfx-build/write-manifests.schema.json",
+ "cdnBasePath": "https://bbdev18.sharepoint.com/sites/glossary/Style%20Library/Glossary-2_0"
+}

@@ -1,0 +1,193 @@
+
+.ms-PersonaCard {
+    font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-animation-name: fadeIn,slideUpIn10;
+    animation-name: fadeIn,slideUpIn10;
+    -webkit-animation-duration: .167s;
+    -moz-animation-duration: .167s;
+    -ms-animation-duration: .167s;
+    -o-animation-duration: .167s;
+    -webkit-animation-timing-function: cubic-bezier(.1,.25,.75,.9);
+    animation-timing-function: cubic-bezier(.1,.25,.75,.9);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    outline: 1px solid transparent
+}
+
+.ms-PersonaCard-persona {
+    background-color: #f4f4f4;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px
+}
+
+.ms-PersonaCard-actions {
+    box-sizing: border-box;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    background-color: #fff;
+    height: 48px
+}
+
+.ms-PersonaCard-actions:before {
+    content: '';
+    position: absolute;
+    top: 47px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #c8c8c8
+}
+
+.ms-PersonaCard-action,.ms-PersonaCard-overflow {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 10px;
+    color: #666;
+    outline: transparent;
+    position: relative;
+    box-sizing: border-box
+}
+
+.ms-PersonaCard-action:hover,.ms-PersonaCard-overflow:hover {
+    color: #212121
+}
+
+.ms-PersonaCard-action:active,.ms-PersonaCard-overflow:active {
+    color: #0078d7
+}
+
+.ms-PersonaCard-action:before,.ms-PersonaCard-overflow:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 100
+}
+
+.ms-PersonaCard-action.is-active,.ms-PersonaCard-overflow.is-active {
+    color: #0078d7
+}
+
+.ms-PersonaCard-action.is-active:after,.ms-PersonaCard-overflow.is-active:after {
+    box-sizing: border-box;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+    position: absolute;
+    border-right: 0;
+    border-bottom: 0;
+    bottom: -4px;
+    left: 13px
+}
+
+.ms-PersonaCard-overflow {
+    font-size: 14px;
+    color: #333;
+    float: right;
+    margin-top: -1px
+}
+
+.ms-PersonaCard-overflow:hover {
+    color: #0078d7
+}
+
+.ms-PersonaCard-actionDetailBox {
+    min-height: 48px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #fff
+}
+
+.ms-PersonaCard-details {
+    display: none;
+    width: 100%;
+    margin: 0;
+    max-height: 300px;
+    min-height: 48px;
+    color: #666;
+    padding: 9px 20px;
+    box-sizing: border-box
+}
+
+.ms-PersonaCard-details.is-active {
+    display: block
+}
+
+.ms-PersonaCard-details.is-collapsed {
+    height: 30px;
+    overflow: hidden
+}
+
+.ms-PersonaCard-details.is-collapsed .ms-PersonaCard-detailExpander:after {
+    content: '\E70D'
+}
+
+.ms-PersonaCard-details[data-detail-id=org] {
+    max-height: 300px
+}
+
+.ms-PersonaCard-detailExpander {
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 2px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    width: 30px
+}
+
+.ms-PersonaCard-detailExpander:after {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-family: FabricMDL2Icons;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    content: '\E70E'
+}
+
+.ms-PersonaCard-detailLine {
+    color: #333;
+    line-height: 30px;
+}
+
+.ms-PersonaCard-detailLabel {
+    color: #666;
+}
+
+
+@media (min-width: 480px) {
+    .ms-PersonaCard {
+        box-shadow:0 0 5px 0 rgba(0,0,0,.4);
+        max-width: 360px;
+        position: relative
+    }
+
+    .ms-ContextualHost .ms-PersonaCard {
+        box-shadow: none
+    }
+}

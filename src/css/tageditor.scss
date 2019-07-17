@@ -1,0 +1,111 @@
+$tagColor: #333 !default;
+$tagColorActive: #111 !default;
+$tagBackgroundColor: #f4f4f4 !default;
+$tagFontSize: 14px !default;
+
+$editorBorder: #ccc !default;
+$editorBorderActive: #808080 !default;
+
+$placeholderColor: #777 !default;
+
+$tagErrorColor: #f2c9c9 !default;
+$tagErrorColorDark: #5c0909 !default;
+
+%tagEditorFont {
+    font-size: $tagFontSize;
+    font-family: "WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+%tag {
+    // padding: 0.077em 2em 0.077em 0.692em;
+    // padding: 0.1em 2em 0.1em 0.6em;
+    padding: 1px 2em 1px 0.6em;
+    line-height: 1.8;
+    // height: 1.846em;
+}
+.tag {
+    display: inline-block;
+    margin-right: .3em;
+    margin-bottom: .5em;
+    position: relative;
+    line-height: 26px;
+    input {
+        margin: 0;
+        // padding: 0;
+        border: 0;
+        box-sizing: content-box;
+
+        color: $tagColor;
+        background-color: $tagBackgroundColor;
+        @extend %tag;
+        // padding: 0.077em 2em 0.077em 0.692em;
+        min-width: 100px;
+        // line-height: 1.846em;
+        // height: 1.846em;
+        /*border-radius: 4px;*/
+        @extend %tagEditorFont;
+        &:focus {
+            color: $tagColorActive;
+            background-color: transparent;
+            outline: 0;
+            & + a {
+                display: none;
+            }
+        }
+    }
+    a {
+        position: absolute;
+        top: 50%;
+        right: 0.3em;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: $tagColor;
+        line-height: 26px;
+        font-size: 12px;
+        width: 12px;
+        height: 26px;
+        text-align: center;
+        &:hover {
+            color: $tagColorActive;
+        }
+    }
+    &.has-error {
+        input {
+            background-color: $tagErrorColor;
+        }
+        input,
+        a {
+            transition: color 1s;
+            color: $tagErrorColorDark;
+        }
+    }
+}
+
+.tag-editor {
+    @extend %tagEditorFont;
+    padding: .5em .5em 0;
+    border: 1px solid $editorBorder;
+    cursor: text;
+    &.is-active {
+        border-color: $editorBorderActive;
+    }
+}
+
+.tag-editor-placeholder {
+    @extend %tagEditorFont;
+    @extend %tag;
+    // padding: 0.077em 2em 0.077em 0.692em;
+    color: $placeholderColor;
+    // line-height: 1.846em;
+    // height: 1.846em;
+    margin-bottom: .5em;
+}
+
+.tag-editor-mirror {
+    @extend %tagEditorFont;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: auto;
+    visibility: hidden;
+}

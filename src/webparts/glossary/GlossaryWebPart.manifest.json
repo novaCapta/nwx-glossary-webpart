@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "6af2276b-2dbd-4a3f-9352-0f79568f0cca",
+  "alias": "nwxGlossaryWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "preconfiguredEntries": [{
+    "groupId": "070951d7-94da-4db8-b06e-9d581f1f55b1", 
+    "group": { "default": "novaWorxx" },
+    "title": { 
+      "default": "novaWorxx: Glossary",
+      "de-de": "novaWorxx: Glossar" },
+    "description": { 
+      "default": "Glossary allows you to quickly build your organization terminology.",
+      "de-de": "Mit Glossar können Sie Ihre Organisationsterminologie schnell erstellen."  },
+    "officeFabricIconFontName": "Page",
+    "properties": { 
+      "title": "novaWorxx: Glossary",
+      "description": "",
+      "listName": "",
+      "letterDisplayMode": "tabs",
+      "initiallySelectFirstLetter": false,
+      "termDisplayMode" : "list",
+      "termsShowAll": false,
+      "termsShowEditorInformation":false,
+      "metaInfo": {
+        "contactContent": {"login" : "", "email":"", "fullName":"", "jobTitle":"", "initials": "", "imageUrl":""}, 
+        "contactTechnical": {"login" : "", "email":"", "fullName":"", "jobTitle":"", "initials": "", "imageUrl":""}, 
+        "audience":"<p>Please describe the target audience of this glossary. This will help the users to understand for which project, organizational unit or expert level it was created.</p>", 
+        "guideline":"<p><u><strong>Purpose</strong></u><br/>The purpose of this glossary is to present important and often used terms, phrases and abbreviations that are unique to &lt;please fill in the name of the project, organizational unit, ..&gt;.<br/><br/><strong><u>Editors</u></strong><br/>The terms in this glossary are created and edited by &lt;please fill in the names, organizational unit or qualification level of the editors&gt;.<br/> <br/><strong><u>Terms</u></strong><br/>Submitted definitions should be a maximum of &lt;please fill in a number&gt; sentences. If another term already in the glossary is synonymous with the term being submitted, the item should be defined as synonym of the first term. Figures to clarify the terms are welcome.<br/> <br/><strong><u>Languages</u></strong><br/>Terms must be submitted in this language: &lt;please fill in&gt;<br/> <br/><u><strong>Review process</strong></u><br/>All terms are reviewed &lt;please fill in, e. g. once a year&gt;.<br/> <br/><strong><u>Suggestions</u></strong><br/>For suggestions please contact the editorial contact.</p>"}
+    }
+
+  }]
+}

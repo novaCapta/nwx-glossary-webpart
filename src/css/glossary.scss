@@ -1,0 +1,621 @@
+/* links */
+.nc-glossary-letters-container .ms-Pivot
+{
+    white-space: normal;
+    background-color: #fff
+}
+.nc-glossary-letters-container .ms-Pivot-link
+{
+    padding-right: 7px;
+    padding-left: 7px;
+    background-color: #fff
+}
+
+html[dir=ltr] .nc-glossary-letters-container .ms-Pivot-link
+{
+    margin-right: 0px;
+}
+
+html[dir=rtl] .nc-glossary-letters-container .ms-Pivot-link
+{
+    margin-left: 0px;
+}
+
+.nc-glossary-letters-container .ms-Pivot-link.is-selected,
+.nc-glossary-letters-container .ms-Pivot-link.is-selected:hover
+{
+    color:#a80000;
+    border-bottom:2px #a80000 solid
+}
+
+.nc-glossary-letters-container .ms-Pivot-link.is-selected::before
+{
+    border:none;
+    height:0px;
+    display: none;
+}
+
+.nc-glossary-letters-container .ms-Pivot-link.is-disabled,
+.nc-glossary-letters-container .ms-Pivot-link.is-disabled:hover
+{
+    color:#ccc;
+}
+
+/* tabs */
+.nc-glossary-letters-container .ms-Pivot--tabs.ms-Pivot
+{
+    white-space: normal;
+    background-color: #f4f4f4
+}
+.nc-glossary-letters-container .ms-Pivot--tabs.ms-Pivot .ms-Pivot-link
+{
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+.nc-glossary-letters-container .ms-Pivot--tabs.ms-Pivot .ms-Pivot-link:hover
+{
+    background-color: rgb(234, 234, 234);
+}
+
+.nc-glossary-letters-container .ms-Pivot--tabs.ms-Pivot .ms-Pivot-link.is-disabled,
+.nc-glossary-letters-container .ms-Pivot--tabs.ms-Pivot .ms-Pivot-link.is-disabled:hover
+{
+     color:#ccc;
+     background-color: rgb(244, 244, 244);
+}
+
+.nc-glossary-letters-container .ms-Pivot--tabs.ms-Pivot .ms-Pivot-link.is-selected,
+.nc-glossary-letters-container .ms-Pivot--tabs.ms-Pivot .ms-Pivot-link.is-selected:hover
+{
+    color:#fff;
+    border-bottom:none;
+}
+
+.nc-glossary-letters-container .ms-Pivot--tabs.ms-Pivot .ms-Pivot-link.is-selected::before
+{
+    border:none;
+    height:0px;
+    display: none;
+}
+/* main */
+.nc-glossary-letters-container .ms-Pivot-link::after 
+{
+    display: none;
+}
+
+.nc-glossary-addTerm .ms-Button-icon
+{
+    margin-left:0px!important;
+    margin-right:0px!important;
+    vertical-align: center;
+}
+
+.nc-glossary-addTerm .ms-Icon
+{
+    color:#0078d7
+}
+
+.nc-glossary-header{
+    float:none;
+}
+.nc-glossary-title{
+    width:80%;
+    margin-top: 4px;
+    float:left;
+}
+
+.nc-glossary-total
+{
+    float:right;
+    margin-top:14px;  
+    margin-right:4px;
+}
+
+.ms-clear{clear:both;}
+.ms-hidden {display: none; visibility:hidden}
+
+.nc-glossary-about
+{
+    margin:0;
+    padding:0;
+}
+.nc-glossary-about .ms-Link
+{
+    margin-bottom:15px;
+    margin-top:-10px;
+    float:left;
+}
+
+.nc-glossary-metainfo
+{
+    min-width:360px;    
+}
+.nc-glossary-metainfo-ctechnical
+{
+    margin-top:10px;
+}
+.nc-glossary-metainfo-audience
+{
+    margin-top:10px;
+}
+.nc-persona
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nc-glossary-metainfo-guideline
+{
+    margin-top:10px;
+}
+
+.nc-glossary-metainfo-audience p, .nc-glossary-metainfo-guideline p
+{
+    margin:0px;
+    padding:0px;
+    padding-bottom:10px;
+}
+
+.nc-glossary-edit  {
+    color: #a6a6a6;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    top: 3px;
+    padding-left:3px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+}
+
+.nc-glossary-edit:hover
+{
+   color: #0078d7;
+}
+
+.nc-filter
+{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.nc-filter-TextField
+{
+    width:50%
+}
+
+.nc-filter-TextField
+{
+    position:relative;
+    float:left
+}
+
+.nc-filter-TextField-button
+{
+    position:absolute;
+    top:-2px;
+    right:5px;
+}
+
+.nc-filter-TextField input::-ms-clear {
+    margin-right:17px;
+    margin-top: 2px;
+    color:#999;
+    font-weight:400
+}
+
+.nc-glossary-addTerm2 {
+    float:right;
+    margin-left: 20px;
+}
+
+.nc-term-itemContent
+{
+    position: relative;
+    display: block;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:9px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.nc-term-itemCell-overview:hover{background-color:#eaeaea;cursor:pointer;outline:1px solid transparent}
+.nc-term-itemCell-dialog .nc-term-itemContent
+{
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.nc-term-termName{
+    display: block;
+}
+
+.nc-term-itemCell-dialog .nc-term-termName 
+{
+    span{display: none;
+    visibility: hidden;}
+}
+
+.nc-term-termName span{
+    color: #212121;
+}
+
+.nc-term-termName .ms-Icon.ms-Icon--Forward
+{
+    /*vertical-align: middle;*/
+    font-size:10px  
+}
+
+.nc-term-termDefinition{
+    margin-top:5px;
+    color: #767676;
+    padding-right: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 16px;
+}
+
+.nc-term-itemCell-overview .nc-term-termDefinition
+{
+    max-height:65px;
+}
+
+.nc-term-itemCell-dialog .nc-term-termDefinition
+{
+    max-height:500px;
+}
+
+.nc-term-itemCell-detail .nc-term-termDefinition
+{
+    /*max-height: 2000px;
+    overflow: auto;*/
+    max-height: none;
+}
+
+.nc-term-termDefinition.show-full
+{
+    /*max-height: 2000px;
+    overflow: auto;*/
+    max-height: none;
+}
+
+.nc-term-termDefinition p, .nc-term-termDefinition ul
+{
+    margin-top:0px;
+    padding-top:0px;
+}
+
+/* .nc-term-termDefinition img
+{
+    max-height: 500px;
+} */
+
+.nc-term-termDefinition ul
+{
+    margin-top:0px;
+    padding-top:0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.nc-term-more
+{
+    margin-top:7px
+}
+
+.nc-term-more a{
+    float:right;
+    margin-right:10px;
+    text-decoration:none;
+}
+
+.nc-term-more a .ms-Icon{
+    padding-right:5px;
+    padding-top:2px;
+}
+
+.nc-term-actions {
+    max-width: 80px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    top: 10px;
+}
+
+.nc-term-metadata
+{
+    margin-top: 10px;    
+}
+
+.nc-term-authorinfo, .nc-term-editorinfo
+{
+    color: #a6a6a6;   
+    font-size: 12px;
+}
+
+.nc-term-synonyms
+{
+    margin-top: 10px; 
+    color: #767676;  
+}
+
+.nc-term-link
+{
+    margin-top: 10px; 
+    color: #767676;    
+}
+
+.nc-term-itemCell-overview .nc-term-link
+{
+    display: none;
+}
+
+.nc-term-action  {
+    color: #a6a6a6;
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    top: 2px;
+    padding-left:4px;
+    cursor: pointer;
+    padding-right:4px;
+}
+
+.nc-term-itemCell-dialog .nc-term-action
+{
+    padding-left:0px;   
+}
+
+.nc-term-action:hover .ms-Icon
+{
+   color: #0078d7;
+}
+
+.nc-term-metaText
+{
+    color: #0078d7;
+    font-weight: 600;
+    font-size: 11px;
+    position: absolute;
+    right: 30px;
+    top: 39px;
+}
+
+.nc-term-crud-header
+{
+    margin-bottom: 20px;
+    background-color: #F4F4F4;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nc-term-crud-form
+{
+    margin-top: 20px;
+    width: 100%;
+    padding-right:10px
+}
+.nc-term-crud-buttons
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.nc-term-dialog-buttons
+{
+    padding-top: 20px;
+}
+
+.nc-termlistselect-description
+{
+    padding-top: 20px;
+}
+.nc-termlistselect-form .ms-Dropdown
+{
+    width:60%;
+}
+.nc-termlistselect-form
+{
+    padding-top: 7px;   
+}
+
+.nc-termlistcreate-description
+{
+    padding-top: 20px;
+}
+.nc-termlistcreate-form
+{
+    padding-top: 7px;
+}
+.nc-termlistcreate-form .ms-TextField
+{
+    float:left; 
+    width:60%;
+}
+.nc-termlistcreate-buttons{
+    float:left;
+}
+
+.nc-termlist-selectorcreate .nc-termlistcreate-form
+{
+      padding-top: 7px;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;  
+}
+
+.nc-termlist-selectorcreate .nc-termlistselect-description
+{
+    padding-top: 10px;
+    text-align: center;
+    font-weight:200;
+}
+.nc-termlist-selectorcreate .nc-termlistselect-form .ms-Dropdown
+{
+	width:92%;
+}
+.nc-termlist-selectorcreate .nc-termlistselect-form
+{
+    padding-top: 7px;   
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    display: table;
+}
+
+.nc-termlist-selectorcreate .nc-termlistcreate-description
+{
+    padding-top: 20px;
+    text-align: center;
+    font-weight:200;
+}
+.nc-termlist-selectorcreate .nc-termlistcreate-form
+{
+    padding-top: 7px;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    display: table;
+}
+.nc-termlist-selectorcreate .nc-termlistcreate-form .ms-TextField
+{
+    float:left; 
+    width:60%;
+}
+
+/* term print view */
+.nc-term-itemCell-print .nc-term-action,
+.nc-term-itemCell-print .nc-term-more{
+    display: none!important;
+    visibility: hidden;
+}
+
+.nc-term-itemCell-print .nc-term-link
+{
+    display: block!important;
+}
+
+.nc-term-itemCell-print .nc-term-termDefinition
+{
+    overflow: visible;
+    max-height: auto;
+}
+
+/* glossary about info edit */
+.nc-glossary-edit-form
+{
+    width: 100%;
+    padding-right:10px
+}
+.nc-glossary-edit-buttons
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.nc-glossary-edit-form{
+    .ql-editor
+    {
+        margin-bottom:0px;
+        min-height: 200px;
+    }
+}
+
+.ms-Panel-headerText.nc-glossary-edit-header
+{
+    margin-top: 0px;
+}
+
+.nc-glossary-metainfo-header
+{
+    margin-bottom: 20px;
+    background-color: #F4F4F4;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nc-webpartinfo-wrapper .nc-webpartinfo
+{
+    margin-top:50px;
+}
+
+.nc-spinner
+{
+    margin-top:20px;
+}
+
+.ms-Dialog-main
+{
+    max-width:600px;
+}
+
+
+
+@media (min-width:320px) and (max-width:480px)
+{
+    .nc-glossary-title {
+        float:none;
+        display:block;
+        margin: 0;
+        padding: 0;
+    } 
+    .nc-glossary-total
+    {
+        float:none;
+        display:block;
+        margin-top: 5px;
+        margin-bottom: 15px
+    }
+
+    .nc-term-termName span
+    {
+        font-size: 16px
+    }
+
+    .nc-filter-TextField
+    {
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+
+    .nc-glossary-addTerm2
+    {
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+
+    .nc-termlistcreate-form .ms-TextField
+    {
+        float:none; 
+        width:100%;
+    }
+
+    
+    .nc-termlistcreate-buttons {
+
+    float:none; 
+
+    }
+
+    .nc-termlistcreate-buttons .ms-Button{
+
+    width:100%;
+
+    }
+}
+
+.Placeholder .Placeholder-container{ height: auto!important; padding-bottom: 80px!important;}
+
+ /*Border on focus*/
+.ms-Fabric.is-focusVisible .ms-Button:focus:after {
+    border: none!important;
+} 
+
+.ms-TextField-errorMessage{
+    color:#a80000;
+}
