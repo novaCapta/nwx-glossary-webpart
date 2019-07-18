@@ -1,4 +1,4 @@
-## nc-glossary
+## nwx-glossary-webpart
 
 The free novaCapta Glossary Webpart for Microsoft SharePoint Framework (SPFx) provides a webpart for an easy to use glossary on your SharePoint (Framework) pages. With the release of Feature Pack 2 of SharePoint 2016, SPFx also becomes available for SharePoint On-Premises.
 
